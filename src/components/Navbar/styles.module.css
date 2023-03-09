@@ -1,0 +1,65 @@
+.navbar {
+  @apply section-p-x py-8 fixed top-0 left-0 right-0 border-b border-b-black/15 lg:py-6 lg:h-[100px] z-[1000];
+}
+
+.navbar--sticky {
+  @apply bg-white dark:bg-secondary-700;
+}
+
+.navbar__container {
+  @apply super-container;
+}
+
+.navbar__mobile {
+  @apply flex items-center justify-between lg:hidden;
+}
+
+.navbar__desktop {
+  @apply hidden lg:flex lg:items-center lg:justify-between lg:gap-x-4;
+}
+
+.nav__list {
+  @apply flex items-center gap-x-8 lg:gap-x-10 ml-4 2xl:ml-20;
+}
+
+.nav__item {
+  @apply text-base font-medium text-secondary-900 flex items-center gap-1.5 hover:text-secondary-400 transition-all duration-300 xl:text-lg dark:text-white dark:hover:text-secondary-300;
+}
+
+.nav__itemIcon {
+  @apply w-4 xl:w-[18px] h-auto;
+}
+
+.nav__cta {
+  @apply flex items-center gap-x-8;
+}
+
+.menu__button {
+  @apply w-4 h-4 flex cursor-pointer;
+}
+
+.menu__toggle {
+  @apply flex flex-col h-4 w-4 justify-center items-center w-full h-full pointer-events-none;
+}
+
+.menu__toggle::before,
+.menu__toggle::after {
+  content: "";
+  @apply h-0.5 w-4 bg-black transition-all duration-200 dark:bg-white;
+}
+
+.menu__toggle:before {
+  transform: translateY(-4px) rotate(0deg);
+}
+
+.menu__toggle:after {
+  transform: translateY(4px) rotate(0deg);
+}
+
+.menu__toggle--expand::before {
+  transform: translateY(2px) rotate(45deg);
+}
+
+.menu__toggle--expand:after {
+  transform: translateY(0) rotate(-45deg);
+}

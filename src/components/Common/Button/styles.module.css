@@ -1,0 +1,11 @@
+.btn {
+  @apply py-3.5 text-base tracking-tight font-semibold flex items-center text-center justify-center rounded-[30px] hover:opacity-80 transition-all duration-300;
+}
+
+.btn-primary {
+  @apply px-8 text-white bg-primary dark:bg-neutral-500 dark:hover:bg-neutral-400;
+}
+
+.btn-minimal {
+  @apply px-7 text-secondary-400 dark:bg-secondary-500 dark:text-secondary-200 dark:hover:bg-secondary-400;
+}
